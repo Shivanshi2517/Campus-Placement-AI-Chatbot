@@ -1,0 +1,15 @@
+{
+  "roles": {
+    "Software Developer": ["python","java","c++","data structures","algorithms","oop","sql","git","dbms","operating systems","problem solving","rest api","linux"],
+    "Web Developer": ["html","css","javascript","react","node","express","mongodb","sql","git","rest api","bootstrap","typescript","responsive"],
+    "Data Analyst": ["python","sql","excel","pandas","numpy","power bi","tableau","statistics","data visualization","matplotlib","data cleaning","dashboard"],
+    "ML Engineer": ["python","machine learning","scikit-learn","tensorflow","pytorch","pandas","numpy","deep learning","nlp","statistics","model deployment","git"]
+  },
+  "sections": {
+    "education": ["education","b.tech","btech","b.e","bachelor","cgpa","gpa"],
+    "skills": ["skills","technical skills","technologies"],
+    "projects": ["project","projects"],
+    "experience": ["internship","experience","intern","work experience"],
+    "certifications": ["certification","certificate","course","coursera","nptel","udemy"]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "questions": [
+    {"id":1,"category":"Quantitative","q":"A 120 m long train runs at 60 km/h. How long does it take to pass a pole?","options":["6 s","7.2 s","8 s","9 s"],"answer":1,"explain":"60 km/h = 16.67 m/s. Time = 120 / 16.67 = 7.2 s."},
+    {"id":2,"category":"Quantitative","q":"If 20% of a number is 50, the number is:","options":["100","200","250","300"],"answer":2,"explain":"x = 50 / 0.20 = 250."},
+    {"id":3,"category":"Quantitative","q":"An article bought for Rs 800 is sold at 20% profit. Selling price?","options":["Rs 900","Rs 960","Rs 1000","Rs 840"],"answer":1,"explain":"800 x 1.20 = 960."},
+    {"id":4,"category":"Quantitative","q":"The average of 5 numbers is 20. If one number, 30, is removed, the new average is:","options":["15","17.5","18","20"],"answer":1,"explain":"Sum = 100. After removing 30: 70 / 4 = 17.5."},
+    {"id":5,"category":"Quantitative","q":"A can finish a job in 10 days and B in 15 days. Together they finish it in:","options":["5 days","6 days","8 days","12 days"],"answer":1,"explain":"1/10 + 1/15 = 1/6, so 6 days."},
+    {"id":6,"category":"Logical","q":"Find the next number: 2, 6, 12, 20, 30, ?","options":["40","42","44","48"],"answer":1,"explain":"Differences are 4, 6, 8, 10, so next is +12 = 42."},
+    {"id":7,"category":"Logical","q":"Choose the odd one out: Apple, Mango, Potato, Banana","options":["Apple","Mango","Potato","Banana"],"answer":2,"explain":"Potato is a vegetable (tuber); the rest are fruits."},
+    {"id":8,"category":"Logical","q":"If CAT = 24 (3+1+20), then DOG = ?","options":["24","26","28","30"],"answer":1,"explain":"D=4, O=15, G=7, so 4+15+7 = 26."},
+    {"id":9,"category":"Logical","q":"Pointing to a boy, a man says, 'He is the son of my father's only son.' The boy is the man's:","options":["Brother","Nephew","Son","Father"],"answer":2,"explain":"My father's only son is me, so the boy is my son."},
+    {"id":10,"category":"Logical","q":"A is B's brother, B is C's sister, and C is D's father. A is D's:","options":["Father","Uncle","Brother","Grandfather"],"answer":1,"explain":"A is C's brother, and C is D's father, so A is D's uncle."},
+    {"id":11,"category":"Verbal","q":"Synonym of 'ABUNDANT':","options":["Scarce","Plentiful","Rare","Limited"],"answer":1,"explain":"Abundant means present in large quantity: plentiful."},
+    {"id":12,"category":"Verbal","q":"Antonym of 'BENEVOLENT':","options":["Kind","Malevolent","Generous","Gentle"],"answer":1,"explain":"Benevolent = well-meaning; malevolent = wishing harm."},
+    {"id":13,"category":"Verbal","q":"Choose the correct sentence:","options":["She don't like tea.","She doesn't like tea.","She not like tea.","She no likes tea."],"answer":1,"explain":"Third person singular takes 'doesn't'."},
+    {"id":14,"category":"Verbal","q":"Choose the correctly spelt word:","options":["Accomodation","Accommodation","Acommodation","Accomadation"],"answer":1,"explain":"Accommodation has double c and double m."},
+    {"id":15,"category":"Technical","q":"Time complexity of binary search on a sorted array:","options":["O(n)","O(log n)","O(n log n)","O(1)"],"answer":1,"explain":"The search space halves each step."},
+    {"id":16,"category":"Technical","q":"Which data structure follows LIFO?","options":["Queue","Stack","Array","Tree"],"answer":1,"explain":"Stack = Last In, First Out."},
+    {"id":17,"category":"Technical","q":"Which SQL command quickly removes all rows but keeps the table structure?","options":["DROP","TRUNCATE","ALTER","SELECT"],"answer":1,"explain":"TRUNCATE empties the table; DROP deletes the table itself."},
+    {"id":18,"category":"Technical","q":"Which is NOT a pillar of OOP?","options":["Encapsulation","Polymorphism","Compilation","Inheritance"],"answer":2,"explain":"The pillars are encapsulation, abstraction, inheritance and polymorphism."},
+    {"id":19,"category":"Technical","q":"Default port number of HTTP is:","options":["21","25","80","443"],"answer":2,"explain":"HTTP uses 80; HTTPS uses 443."},
+    {"id":20,"category":"Technical","q":"Which sorting algorithm has O(n log n) worst-case time?","options":["Bubble sort","Quick sort","Merge sort","Insertion sort"],"answer":2,"explain":"Merge sort is O(n log n) in all cases; quick sort's worst case is O(n^2)."}
+  ]
+}

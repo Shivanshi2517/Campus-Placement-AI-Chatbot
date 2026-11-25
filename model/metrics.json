@@ -1,0 +1,9 @@
+{
+  "samples": 416,
+  "intents": 23,
+  "test_accuracy": 0.8095,
+  "cv_accuracy": 0.7909,
+  "algorithm": "TF-IDF (word + char n-grams) + Logistic Regression",
+  "trained_at": "2026-10-26 12:01:06",
+  "train_seconds": 1.27
+}

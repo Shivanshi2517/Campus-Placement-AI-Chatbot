@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Campus Placement Assistant</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=IBM+Plex+Sans:wght@400;500&display=swap">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="app">
+  <aside class="rail">
+    <div class="brand">
+      <div class="brand-mark">P</div>
+      <div><h1>Placement Desk</h1><p>Your campus career assistant</p></div>
+    </div>
+    <nav>
+      <button class="tab active" data-tab="chat">Ask the bot</button>
+      <button class="tab" data-tab="resume">Resume check</button>
+      <button class="tab" data-tab="elig">Eligibility</button>
+      <button class="tab" data-tab="quiz">Mock quiz</button>
+      <button class="tab" data-tab="train">Train the model</button>
+    </nav>
+    <p class="rail-note">The chatbot's brain is a model trained on this project's own dataset. No external AI API is used.</p>
+  </aside>
+
+  <main>
+    <!-- CHAT -->
+    <section id="chat" class="panel active">
+      <header><h2>Ask anything about placements</h2><p>Interview prep, companies, salary, documents and more.</p></header>
+      <div id="log" class="log"></div>
+      <div class="chips" id="chips">
+        <button>What is the placement process?</button>
+        <button>How to crack technical interview</button>
+        <button>Average package for freshers</button>
+        <button>Documents required for placement</button>
+      </div>
+      <div class="composer">
+        <input id="msg" placeholder="Type your question..." autocomplete="off">
+        <button id="send">Send</button>
+      </div>
+    </section>
+
+    <!-- RESUME -->
+    <section id="resume" class="panel">
+      <header><h2>Resume check</h2><p>Paste your resume text or upload a PDF/TXT. You get a score for the role you pick.</p></header>
+      <div class="card form">
+        <label>Target role
+          <select id="role">{% for r in roles %}<option>{{ r }}</option>{% endfor %}</select>
+        </label>
+        <label>Upload resume (PDF or TXT)
+          <input type="file" id="rfile" accept=".pdf,.txt">
+        </label>
+        <label>Or paste text
+          <textarea id="rtext" rows="8" placeholder="Paste your resume here..."></textarea>
+        </label>
+        <button class="primary" id="rgo">Analyse resume</button>
+      </div>
+      <div id="rout"></div>
+    </section>
+
+    <!-- ELIGIBILITY -->
+    <section id="elig" class="panel">
+      <header><h2>Company eligibility</h2><p>Enter your academics to see which companies you can apply to.</p></header>
+      <div class="card form grid">
+        <label>CGPA<input type="number" id="cgpa" step="0.01" min="0" max="10" value="7.5"></label>
+        <label>10th %<input type="number" id="tenth" step="0.1" min="0" max="100" value="80"></label>
+        <label>12th %<input type="number" id="twelfth" step="0.1" min="0" max="100" value="78"></label>
+        <label>Active backlogs<input type="number" id="backlogs" min="0" value="0"></label>
+        <label>Branch
+          <select id="branch"><option>CSE</option><option>IT</option><option>ECE</option><option>EEE</option><option>MECH</option><option>CIVIL</option></select>
+        </label>
+        <button class="primary" id="ego">Check eligibility</button>
+      </div>
+      <div id="eout"></div>
+    </section>
+
+    <!-- QUIZ -->
+    <section id="quiz" class="panel">
+      <header><h2>Mock aptitude quiz</h2><p>Five random questions per round, with explanations.</p></header>
+      <div class="card form inline">
+        <label>Category
+          <select id="qcat"><option>All</option>{% for c in categories %}<option>{{ c }}</option>{% endfor %}</select>
+        </label>
+        <button class="primary" id="qgo">Start quiz</button>
+      </div>
+      <div id="qout"></div>
+    </section>
+
+    <!-- TRAIN -->
+    <section id="train" class="panel">
+      <header><h2>Train the model</h2><p>Teach the bot new questions, then retrain it with one click.</p></header>
+      <div id="minfo" class="card stats"></div>
+      <div class="card form">
+        <h3>Teach a new sentence</h3>
+        <label>Example question<input id="tsent" placeholder="e.g. do you have mock interview sessions"></label>
+        <label>Intent (existing or new)
+          <input id="tint" list="intentlist" placeholder="e.g. interview_tips">
+          <datalist id="intentlist"></datalist>
+        </label>
+        <label>Answer (only for a new intent)<input id="tans" placeholder="Reply the bot should give"></label>
+        <label>Admin key<input id="tkey" type="password" placeholder="default: admin123"></label>
+        <button class="primary" id="tgo">Add and retrain</button>
+        <p id="tmsg" class="hint"></p>
+      </div>
+      <div class="card">
+        <h3>Questions the bot could not answer</h3>
+        <ul id="unk" class="unk"></ul>
+        <p class="hint">Click a question to copy it into the form above.</p>
+      </div>
+    </section>
+  </main>
+</div>
+<script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

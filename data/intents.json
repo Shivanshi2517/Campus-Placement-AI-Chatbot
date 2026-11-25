@@ -1,0 +1,607 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "hi",
+        "hello",
+        "hey",
+        "good morning",
+        "good evening",
+        "hello bot",
+        "hey there",
+        "hii",
+        "helo",
+        "is anyone there",
+        "namaste",
+        "hi buddy",
+        "hello there",
+        "hi bot",
+        "hey chatbot",
+        "good afternoon",
+        "hey how are you",
+        "howdy",
+        "hello sir",
+        "greetings",
+        "hi good day",
+        "yo"
+      ],
+      "responses": [
+        "Hello! I'm your Campus Placement Assistant. Ask me about companies, resume, interviews, aptitude or eligibility."
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "bye",
+        "goodbye",
+        "see you later",
+        "see you",
+        "exit",
+        "talk to you later",
+        "i am leaving",
+        "ok bye",
+        "good night",
+        "catch you later",
+        "see ya",
+        "bye bye",
+        "take care",
+        "i have to go",
+        "thats all bye",
+        "leaving now",
+        "farewell"
+      ],
+      "responses": [
+        "Goodbye! Best of luck with your placements."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "thanks",
+        "thank you",
+        "thanks a lot",
+        "thank you so much",
+        "that was helpful",
+        "great help",
+        "nice answer",
+        "awesome thanks",
+        "ok thanks",
+        "cool thank you",
+        "thanks bro",
+        "thank u",
+        "thx",
+        "many thanks",
+        "thanks for the help",
+        "got it thanks",
+        "appreciate it",
+        "that helps thank you"
+      ],
+      "responses": [
+        "You're welcome! Ask me anything else about placements."
+      ]
+    },
+    {
+      "tag": "about_bot",
+      "patterns": [
+        "who are you",
+        "what can you do",
+        "what is your name",
+        "help",
+        "how can you help me",
+        "what are your features",
+        "tell me about yourself",
+        "what do you do",
+        "how to use this bot",
+        "your capabilities",
+        "what are you",
+        "can you help me",
+        "what is this chatbot",
+        "tell me what you can do",
+        "how do you work",
+        "are you a robot",
+        "which model are you",
+        "how were you trained",
+        "explain your features",
+        "what can i ask you"
+      ],
+      "responses": [
+        "I'm a placement assistant trained on my own dataset (TF-IDF + Logistic Regression). I answer placement questions, check your resume against a job role, check company eligibility, and run mock aptitude quizzes. Use the tabs on the left."
+      ]
+    },
+    {
+      "tag": "placement_process",
+      "patterns": [
+        "what is the placement process",
+        "how does campus placement work",
+        "placement procedure",
+        "steps in campus recruitment",
+        "explain the placement rounds",
+        "how are students selected",
+        "stages of placement",
+        "what happens in campus placement",
+        "placement drive process",
+        "selection process of companies",
+        "how many rounds are there",
+        "how is the recruitment process",
+        "what are the rounds in placement",
+        "explain campus hiring steps",
+        "what is the selection procedure",
+        "recruitment process of companies",
+        "how does the hiring work",
+        "placement rounds explained",
+        "what are the steps for getting a job through campus"
+      ],
+      "responses": [
+        "A typical campus drive has: 1) Pre-placement talk, 2) Online aptitude/coding test, 3) Group discussion (some companies), 4) Technical interview, 5) HR interview, 6) Offer letter. Each company may skip or add a round."
+      ]
+    },
+    {
+      "tag": "eligibility",
+      "patterns": [
+        "what is the eligibility criteria",
+        "who can sit for placements",
+        "minimum cgpa required",
+        "am i eligible for placement",
+        "backlog criteria for placement",
+        "can i apply with backlogs",
+        "percentage required for companies",
+        "eligibility for tcs",
+        "cutoff for placements",
+        "required marks for campus drive",
+        "do companies allow arrears",
+        "what cgpa do i need",
+        "am i eligible for infosys",
+        "can i sit for amazon with 7 cgpa",
+        "what is the cutoff for companies",
+        "criteria to attend campus drive",
+        "do i qualify for placement",
+        "eligible companies for me",
+        "minimum marks for tcs wipro",
+        "cgpa criteria",
+        "company eligibility rules",
+        "can i apply for placement with 60 percent",
+        "which companies allow backlog"
+      ],
+      "responses": [
+        "Most companies ask for 60% or 6.0+ CGPA throughout (10th, 12th, graduation) and no active backlogs. Use the 'Eligibility' tab to check company-wise criteria with your own marks."
+      ],
+      "action": "eligibility"
+    },
+    {
+      "tag": "companies",
+      "patterns": [
+        "which companies visit our campus",
+        "list of recruiting companies",
+        "top recruiters",
+        "which companies come for placement",
+        "companies hiring freshers",
+        "name some companies for campus drive",
+        "which mnc visit",
+        "who are the recruiters",
+        "companies coming this year",
+        "product based companies visiting",
+        "service based companies list",
+        "which companies will come",
+        "list of companies for campus placement",
+        "which mncs recruit freshers",
+        "top companies hiring",
+        "what companies visit colleges",
+        "name the recruiters"
+      ],
+      "responses": [
+        "Common recruiters include TCS, Infosys, Wipro, Cognizant, Accenture, Capgemini, Zoho, Amazon and Microsoft. Check the 'Eligibility' tab for sample criteria of each."
+      ]
+    },
+    {
+      "tag": "salary",
+      "patterns": [
+        "what is the salary package",
+        "average package offered",
+        "how much do freshers earn",
+        "highest package",
+        "ctc for freshers",
+        "lpa offered by companies",
+        "what salary will i get",
+        "package of tcs",
+        "salary of software engineer fresher",
+        "expected ctc",
+        "pay scale for freshers",
+        "how much will companies pay",
+        "how much salary do freshers get",
+        "what package will i get",
+        "fresher salary in it companies",
+        "average ctc in campus placement",
+        "how much do companies pay",
+        "highest salary offered"
+      ],
+      "responses": [
+        "Service companies typically offer 3.5-7 LPA to freshers, while product companies and top startups offer 10-45+ LPA depending on role and performance. Exact packages vary each year."
+      ]
+    },
+    {
+      "tag": "resume_tips",
+      "patterns": [
+        "how to make a good resume",
+        "resume tips",
+        "what should i put in my resume",
+        "resume format for freshers",
+        "how long should a resume be",
+        "tips for writing cv",
+        "improve my resume",
+        "best resume template",
+        "what to include in cv",
+        "how to write a resume for placement",
+        "resume dos and donts",
+        "ats friendly resume",
+        "how to build resume",
+        "what to write in resume",
+        "fresher resume sample",
+        "cv making tips",
+        "resume format",
+        "how to improve my cv"
+      ],
+      "responses": [
+        "Keep it to 1 page. Include: contact info, education, skills, 2-3 projects (with tech stack and results), internships, certifications. Use action verbs and numbers (e.g., 'reduced load time by 30%'). Try the 'Resume Check' tab for an instant score."
+      ],
+      "action": "resume"
+    },
+    {
+      "tag": "interview_tips",
+      "patterns": [
+        "how to crack technical interview",
+        "interview tips",
+        "how to prepare for interview",
+        "tips for technical round",
+        "what questions are asked in interview",
+        "how to answer tell me about yourself",
+        "interview preparation guide",
+        "how to face interview confidently",
+        "common interview questions",
+        "technical interview preparation",
+        "how to perform well in interview",
+        "what to expect in interview",
+        "tips to clear technical interview",
+        "how to prepare for technical interview",
+        "how to be confident in interview",
+        "interview do's and don'ts",
+        "what should i do in an interview",
+        "how to answer interview questions"
+      ],
+      "responses": [
+        "Revise core subjects (DSA, DBMS, OS, OOP, CN), be ready to explain every project line on your resume, practise 'Tell me about yourself' in 60 seconds, think aloud while solving problems, and ask a good question at the end."
+      ]
+    },
+    {
+      "tag": "aptitude_prep",
+      "patterns": [
+        "how to prepare for aptitude test",
+        "aptitude preparation",
+        "best books for aptitude",
+        "quantitative aptitude tips",
+        "logical reasoning preparation",
+        "how to improve aptitude",
+        "aptitude topics for placement",
+        "practice aptitude questions",
+        "verbal ability preparation",
+        "how to clear online test",
+        "aptitude test syllabus",
+        "tips for aptitude round",
+        "how to practice aptitude",
+        "aptitude questions for placement",
+        "how to solve quant problems fast",
+        "reasoning tips for online test",
+        "prepare for aptitude round",
+        "what is asked in aptitude test",
+        "mock aptitude test",
+        "aptitude shortcuts"
+      ],
+      "responses": [
+        "Focus on percentages, profit & loss, time-speed-distance, time & work, number series, blood relations, and verbal (synonyms, grammar). Practise daily with timers. Try the 'Mock Quiz' tab!"
+      ],
+      "action": "quiz"
+    },
+    {
+      "tag": "coding_prep",
+      "patterns": [
+        "how to prepare for coding round",
+        "dsa preparation for placement",
+        "which language is best for coding interviews",
+        "leetcode for placements",
+        "how many problems should i solve",
+        "coding questions asked in placements",
+        "competitive programming for placement",
+        "data structures for interview",
+        "where to practice coding",
+        "best website to practice coding",
+        "coding test tips",
+        "how to start dsa",
+        "how to prepare coding for placement",
+        "how to learn data structures and algorithms",
+        "dsa roadmap for placements",
+        "which programming language for placement",
+        "how to practice programming for interviews",
+        "coding round preparation tips",
+        "solve problems on leetcode",
+        "best resources for dsa",
+        "how to improve coding skills",
+        "what coding topics are asked"
+      ],
+      "responses": [
+        "Pick one language (C++/Java/Python). Master arrays, strings, linked lists, stacks, queues, trees, graphs, recursion and DP. Solve 150-300 problems on LeetCode/GeeksforGeeks, and practise writing code without an IDE."
+      ]
+    },
+    {
+      "tag": "group_discussion",
+      "patterns": [
+        "how to do well in group discussion",
+        "gd tips",
+        "group discussion topics",
+        "how to start a gd",
+        "what are gd rules",
+        "how to speak in group discussion",
+        "gd preparation",
+        "how are gd marks given",
+        "common gd topics for freshers",
+        "gd round strategy",
+        "tips for group discussion round",
+        "how to perform in gd",
+        "group discussion preparation tips",
+        "gd topics for placement",
+        "how to crack group discussion",
+        "what to speak in gd"
+      ],
+      "responses": [
+        "In a GD: listen first, start with a short fact or definition, speak clearly with 2-3 points, never interrupt rudely, support others' points, and summarise at the end if possible."
+      ]
+    },
+    {
+      "tag": "hr_questions",
+      "patterns": [
+        "common hr questions",
+        "hr interview questions",
+        "tell me about yourself answer",
+        "what are your strengths and weaknesses",
+        "why should we hire you",
+        "where do you see yourself in 5 years",
+        "hr round preparation",
+        "how to answer hr questions",
+        "salary expectation question",
+        "are you willing to relocate",
+        "hr round tips",
+        "why do you want to join our company",
+        "what are the hr round questions",
+        "how to answer why should we hire you",
+        "hr interview preparation questions",
+        "tell me about yourself in interview",
+        "questions asked by hr",
+        "how to handle strengths weakness question",
+        "what to say in hr round",
+        "where do you see yourself after five years answer",
+        "why this company question",
+        "behavioural interview questions",
+        "star method answers"
+      ],
+      "responses": [
+        "Prepare short honest answers for: Tell me about yourself, strengths/weaknesses, why this company, 5-year goals, relocation, and a teamwork/conflict story (use the STAR method: Situation, Task, Action, Result)."
+      ]
+    },
+    {
+      "tag": "internship",
+      "patterns": [
+        "how to get an internship",
+        "internship opportunities",
+        "do internships help in placement",
+        "where to find internships",
+        "internship for freshers",
+        "summer internship",
+        "is internship necessary",
+        "how to apply for internship",
+        "stipend for internship",
+        "virtual internship options",
+        "internship vs project",
+        "how to find internship",
+        "internship tips",
+        "should i do internship",
+        "are internships important",
+        "how to get internship as a fresher"
+      ],
+      "responses": [
+        "Internships add real experience and often lead to pre-placement offers. Look at Internshala, LinkedIn, company career pages, and your college TPO cell. Even virtual internships and open-source contributions help your resume."
+      ]
+    },
+    {
+      "tag": "documents",
+      "patterns": [
+        "documents required for placement",
+        "what documents to carry for interview",
+        "list of documents for campus drive",
+        "certificates needed for placement",
+        "do i need original certificates",
+        "what to bring on interview day",
+        "documents for joining",
+        "mark sheets required",
+        "id proof for placement",
+        "document verification list",
+        "what documents should i take",
+        "documents needed for campus drive",
+        "which certificates to carry",
+        "what to carry for interview",
+        "papers required for placement"
+      ],
+      "responses": [
+        "Carry: updated resume (3-4 copies), photo ID (Aadhaar/college ID), 10th, 12th and all semester mark sheets, degree/provisional certificate, passport photos, and certificates for achievements/internships."
+      ]
+    },
+    {
+      "tag": "dress_code",
+      "patterns": [
+        "what to wear for interview",
+        "dress code for placement",
+        "formal dress for interview",
+        "what should i wear to campus drive",
+        "interview attire",
+        "clothes for interview",
+        "dress for hr round",
+        "shoes for interview",
+        "grooming tips for interview",
+        "what dress should i wear for placement",
+        "formal wear for campus interview",
+        "how to dress for interview",
+        "should i wear a tie",
+        "interview outfit suggestions"
+      ],
+      "responses": [
+        "Wear formals: light shirt, dark trousers, formal shoes (men) or formal kurta/shirt-trousers/saree (women). Keep it clean, ironed and simple. Neat grooming and a confident smile matter."
+      ]
+    },
+    {
+      "tag": "registration",
+      "patterns": [
+        "how to register for placement",
+        "placement registration process",
+        "how to apply for campus drive",
+        "where to register for companies",
+        "how do i enroll in placement cell",
+        "registration last date",
+        "apply for placement drive",
+        "placement portal registration",
+        "how to sign up for placement",
+        "register for tpo",
+        "how do i register for campus drive",
+        "process to apply for companies",
+        "registering for placement cell",
+        "how to enroll for placements",
+        "sign up for placement process"
+      ],
+      "responses": [
+        "Register with your college Training & Placement Office (TPO) portal, upload your resume and marksheets, and then apply to each company drive before its deadline. Watch your college email for notifications."
+      ]
+    },
+    {
+      "tag": "skills_demand",
+      "patterns": [
+        "which skills are in demand",
+        "top skills for freshers",
+        "what skills do companies want",
+        "skills required for software jobs",
+        "best programming languages to learn",
+        "what should i learn for placement",
+        "in demand technologies",
+        "skills for data science",
+        "what skills to add in resume",
+        "soft skills needed",
+        "which course should i do for placement",
+        "what skills should i learn to get placed",
+        "skills needed for fresher jobs",
+        "which technologies are in demand",
+        "what do recruiters look for",
+        "important skills for placement",
+        "which tech stack to learn"
+      ],
+      "responses": [
+        "In demand: DSA + one language, SQL, web basics (HTML/CSS/JS, React), Python, cloud basics (AWS/Azure), Git, plus communication and teamwork. For data roles add statistics, pandas and ML basics."
+      ]
+    },
+    {
+      "tag": "higher_studies",
+      "patterns": [
+        "higher studies or job",
+        "should i do mtech or job",
+        "mba after btech",
+        "gate or placement",
+        "is masters better than job",
+        "study abroad vs placement",
+        "should i prepare for gate",
+        "job vs further studies",
+        "ms or placement",
+        "career after engineering",
+        "should i go for higher studies",
+        "masters or job after btech",
+        "gate preparation or placements",
+        "ms abroad or job",
+        "mba or job"
+      ],
+      "responses": [
+        "If you want research, specialised roles or a switch of domain, go for higher studies (GATE/GRE/CAT). If you want early experience and income, take the job - you can still pursue part-time or sponsored higher studies later."
+      ]
+    },
+    {
+      "tag": "backlog_gap",
+      "patterns": [
+        "i have backlogs can i get placed",
+        "what if i have a gap year",
+        "arrears and placement",
+        "how to explain a gap in resume",
+        "can i get job with low cgpa",
+        "low percentage placement chances",
+        "what to do if i have no offers",
+        "rejected in all companies",
+        "failed in interview what next",
+        "not selected in placement",
+        "how to recover from rejection",
+        "placement stress",
+        "will backlogs affect my placement",
+        "i have an arrear what to do",
+        "my cgpa is low will i get a job",
+        "what if no company selects me",
+        "how to deal with rejection",
+        "can i get placed with a gap",
+        "i failed placement rounds"
+      ],
+      "responses": [
+        "Clear backlogs ASAP since many companies need zero active backlogs. For low CGPA or gaps, build strong projects, skills and certifications, and be honest in interviews. Off-campus drives, referrals and startups are great alternatives. Rejection is part of the process - keep going."
+      ]
+    },
+    {
+      "tag": "contact_tpo",
+      "patterns": [
+        "how to contact tpo",
+        "placement officer contact",
+        "email of placement cell",
+        "who is the placement coordinator",
+        "phone number of training and placement",
+        "where is the placement office",
+        "tpo office timing",
+        "contact placement department",
+        "talk to placement officer",
+        "contact details of placement cell",
+        "tpo email id",
+        "how to reach placement office",
+        "who handles placements",
+        "placement cell phone"
+      ],
+      "responses": [
+        "Please contact your college Training & Placement Office. Their email and phone are on the college website or notice board. (Edit this response in data/intents.json to add your college's real contact details.)"
+      ]
+    },
+    {
+      "tag": "important_dates",
+      "patterns": [
+        "when does placement season start",
+        "placement schedule",
+        "important dates for campus drive",
+        "when will companies visit",
+        "next placement drive date",
+        "last date to apply",
+        "calendar for placements",
+        "upcoming drives",
+        "placement timeline",
+        "which month do placements happen",
+        "when is the next campus drive",
+        "what is the date of placement drive",
+        "placement dates this year",
+        "when do companies come to college",
+        "drive schedule for this month",
+        "deadline for applying to companies",
+        "when does recruitment start",
+        "which month is placement season",
+        "when will placements begin for final year",
+        "date of tcs drive"
+      ],
+      "responses": [
+        "Placement season usually starts in the 7th semester (Aug-Sep) and continues till the 8th semester. Check your college TPO notices for the exact drive calendar. (Edit this in data/intents.json with your own dates.)"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "_note": "SAMPLE criteria. Edit these to match what your college TPO publishes.",
+  "companies": [
+    {"name":"TCS","min_cgpa":6.0,"min_10th":60,"min_12th":60,"max_backlogs":1,"branches":["CSE","IT","ECE","EEE","MECH","CIVIL"],"package":"3.6 - 7 LPA","rounds":"Aptitude (NQT) > Technical > HR"},
+    {"name":"Infosys","min_cgpa":6.0,"min_10th":60,"min_12th":60,"max_backlogs":0,"branches":["CSE","IT","ECE","EEE","MECH"],"package":"3.6 - 9.5 LPA","rounds":"Online test > Technical > HR"},
+    {"name":"Wipro","min_cgpa":6.0,"min_10th":60,"min_12th":60,"max_backlogs":0,"branches":["CSE","IT","ECE","EEE"],"package":"3.5 - 6.5 LPA","rounds":"Aptitude + Coding > Technical > HR"},
+    {"name":"Cognizant","min_cgpa":6.0,"min_10th":60,"min_12th":60,"max_backlogs":0,"branches":["CSE","IT","ECE","EEE","MECH"],"package":"4 - 6.75 LPA","rounds":"Aptitude > Technical > HR"},
+    {"name":"Accenture","min_cgpa":6.0,"min_10th":65,"min_12th":65,"max_backlogs":0,"branches":["CSE","IT","ECE","EEE","MECH","CIVIL"],"package":"4.5 - 9 LPA","rounds":"Cognitive + Coding > Communication > Technical/HR"},
+    {"name":"Capgemini","min_cgpa":6.0,"min_10th":60,"min_12th":60,"max_backlogs":0,"branches":["CSE","IT","ECE","EEE"],"package":"4 - 7.5 LPA","rounds":"Game-based aptitude > Technical > HR"},
+    {"name":"Zoho","min_cgpa":0,"min_10th":0,"min_12th":0,"max_backlogs":99,"branches":["CSE","IT","ECE","EEE","MECH","CIVIL"],"package":"6 - 10 LPA","rounds":"Programming rounds > Technical > HR (marks are not a criterion)"},
+    {"name":"Amazon","min_cgpa":7.0,"min_10th":70,"min_12th":70,"max_backlogs":0,"branches":["CSE","IT","ECE"],"package":"20 - 45 LPA","rounds":"Online assessment > 2-3 Technical > Bar raiser"},
+    {"name":"Microsoft","min_cgpa":7.5,"min_10th":70,"min_12th":70,"max_backlogs":0,"branches":["CSE","IT","ECE"],"package":"30 - 50 LPA","rounds":"Coding test > 3 Technical > HR/Manager"}
+  ]
+}
